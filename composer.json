@@ -1,0 +1,31 @@
+{
+  "name": "simplesoftware/simple",
+  "description": "simple是基于Composer的微型框架,非常适用于为mobile app项目提供api服务",
+  "keywords": ["psr", "simple", "framework"],
+  "license": "MIT",
+  "type": "Framework",
+  "require": {
+    "php": ">=5.4.0",
+    "noahbuscher/macaw": "dev-master",
+    "illuminate/database": "^5.1",
+    "filp/whoops": "1.*",
+    "phpmailer/phpmailer": "^5.2",
+    "predis/predis": "^1.0",
+    "monolog/monolog": "^1.17",
+    "simplesoftware/simpleroute" : "dev-master"
+
+  },
+  "autoload": {
+    "psr-4":{
+      "App\\" : "App/",
+      "Services\\" : "Services/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.1-dev"
+    }
+  }
+
+
+}
